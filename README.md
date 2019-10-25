@@ -1,10 +1,11 @@
-# Docker Compose para Odoo
-## Instalación
-* instalar docker-compose con "pip install docker-compose"
-* instalar docker-engine con "sudo curl -sSL https://get.docker.com/ | sh"
-* en algun directorio que deseemos, descargamos este repositorio "git clone git@github.com:ingadhoc/docker-compose-odoo.git"
-* levantamos odoo entrando al directorio (cd docker-compose-odoo) y corriendo "docker-compose up"
-* accedemos a odoo en http://localhost:8069/
+# Entorno docker-compose para ODOO
+
+## Configuración
+* Instalar docker-compose con "pip install docker-compose"
+* Instalar docker-ce con "sudo curl -sSL https://get.docker.com/ | sh"
+* En un directorio local, por ejemplo code, clone este repositorio "git clone git@github.com:ingadhoc/docker-compose-odoo.git"
+* Levantamos ODOO entrando al directorio (cd docker-compose-odoo) y ejecutando "docker-compose up"
+* Mediante un browser, accedemos a ODOO en http://localhost:8069/
 
 ## Agregado de repositorios
 La imagen sugerida de odoo ya tiene los repositorios que usamos cargados. Si se quiere trabajar en desarrollo o agregar otros repositorios localmente, entonces:
@@ -28,3 +29,8 @@ La imagen sugerida de odoo ya tiene los repositorios que usamos cargados. Si se 
         * tirar un update de un modulo "docker-compose run --rm odoo -d demo -u base"
 * docker-compose config: permite ver la configuracion con la que se esta levantando
 * export atributo=valor: permite definir atributos de contexto que el compose toma y se puede ver con el config 
+
+
+## Soporte
+* Si encontras un error o queres agregar alguna funcionalidad, por favor crear un issue.
+* Por cualquier otro contacto, envianos un email a 7of9 at ydevops.com
